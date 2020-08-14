@@ -1,0 +1,32 @@
+body {
+  font-family: 'Proxima Nova';
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.fade-enter > div {
+  opacity: 0;
+}
+.fade-enter-active > div {
+  opacity: 1;
+}
+.fade-exit > div {
+  opacity: 1;
+}
+.fade-exit-active > div {
+  opacity: 0;
+}
+.fade-enter-active > div,
+.fade-exit-active > div {
+  transition: opacity 0.3s;
+}
